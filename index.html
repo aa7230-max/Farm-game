@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="팜게임" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="theme-color" content="#fff3e0" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <title>팜게임</title>
+    <style>
+      html, body { margin: 0; height: 100%; background: #fff3e0; overflow: hidden; touch-action: none; font-family: 'Malgun Gothic', -apple-system, sans-serif; }
+      #app { position: fixed; inset: 0; }
+      #hud { position: fixed; top: calc(env(safe-area-inset-top) + 12px); left: 12px; padding: 8px 14px; border-radius: 20px; background: rgba(255,253,245,0.94); color: #5d4037; font-weight: 700; font-size: 13px; box-shadow: 0 4px 12px rgba(0,0,0,0.12); }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="hud">🌾 팜게임 · M0</div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

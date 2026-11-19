@@ -22,8 +22,19 @@ supabase/migrations/  DB 스키마 SQL
 docs/                 설계서
 ```
 
+## 실행 방법
+```bash
+npm install
+npm run dev      # 개발 서버
+npm run build    # 배포용 빌드 (dist/)
+```
+
+## 배포
+`main`에 push하면 GitHub Actions가 빌드해서 GitHub Pages에 올립니다.
+처음 한 번만: 저장소 Settings → Pages → Source를 **GitHub Actions**로 선택.
+
 ## 개발 상태
-아직 초기 단계입니다. 로드맵은 설계서 8장(v0.2) 참고.
+M0 진행 중: 빈 3D 마을과 설치 가능한 웹앱 기본 구조. 로드맵은 설계서 8장(v0.2) 참고.
 
 ## 라이선스
 미정. 사용하는 무료 에셋의 라이선스는 `public/assets/LICENSES.md`에 기록할 예정입니다.
